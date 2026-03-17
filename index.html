@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baştürk Holding - Teknoloji, e-ticaret ve lüks hizmetler sektörlerinde öncü holding şirketi">
+    <meta name="keywords" content="holding, teknoloji, yapay zeka, e-ticaret, dijital pazarlama">
+    <meta name="author" content="Baştürk Holding">
+    <title>Baştürk Holding | Teknoloji ve İnovasyon Lideri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-text">BAŞTÜRK</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <circle cx="10" cy="10" r="5"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">BAŞTÜRK</span>
+                <span class="logo-subtitle">HOLDING</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#hakkimizda" data-en="About">Hakkımızda</a>
+                <a href="#sirketlerimiz" data-en="Companies">Şirketlerimiz</a>
+                <a href="#timeline" data-en="Timeline">Tarihçe</a>
+                <a href="#haberler" data-en="News">Haberler</a>
+                <a href="#iletisim" data-en="Contact">İletişim</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-en="Innovation Leader">İnovasyon Lideri</div>
+                <h1 class="hero-title">
+                    <span class="title-line">BAŞTÜRK</span>
+                    <span class="title-line">HOLDING</span>
+                </h1>
+                <div class="hero-line"></div>
+                <p class="hero-subtitle" data-en="Leading in Technology and Innovation">Teknoloji ve İnovasyonda Öncü</p>
+                <p class="hero-description" data-en="Building the future today with innovative solutions">Geleceği bugünden inşa eden, yenilikçi çözümler üreten holding</p>
+                <div class="hero-buttons">
+                    <a href="#sirketlerimiz" class="cta-button primary" data-en="Explore Our Companies">Şirketlerimizi Keşfedin</a>
+                    <a href="#iletisim" class="cta-button secondary" data-en="Contact Us">İletişime Geçin</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <p data-en="Scroll">Kaydır</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <div>
+                    <h2 data-en="About Baştürk Holding">Baştürk Holding</h2>
+                    <p class="section-subtitle" data-en="Who We Are">Biz Kimiz</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-text" data-en="Baştürk Holding is the umbrella organization of innovative companies operating in technology, e-commerce, digital marketing and luxury services sectors. We make a difference in the industry with our visionary approach and customer-oriented solutions.">
+                    Baştürk Holding, teknoloji, e-ticaret, dijital pazarlama ve lüks hizmetler sektörlerinde faaliyet gösteren yenilikçi şirketlerin çatı kuruluşudur. Vizyoner yaklaşımımız ve müşteri odaklı çözümlerimizle sektörde fark yaratıyoruz.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label" data-en="Companies">Şirket</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2023">0</div>
+                        <div class="stat-label" data-en="Founded">Kuruluş</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label" data-en="Countries">Ülke</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label" data-en="Team Members">Ekip Üyesi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="sirketlerimiz" class="companies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <div>
+                    <h2 data-en="Our Companies">Şirketlerimiz</h2>
+                    <p class="section-subtitle" data-en="Portfolio">Portföyümüz</p>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-en="All">Tümü</button>
+                <button class="filter-btn" data-filter="teknoloji" data-en="Technology">Teknoloji</button>
+                <button class="filter-btn" data-filter="eticaret" data-en="E-Commerce">E-Ticaret</button>
+                <button class="filter-btn" data-filter="lüks" data-en="Luxury">Lüks Hizmetler</button>
+                <button class="filter-btn" data-filter="marka" data-en="Brand">Marka</button>
+            </div>
+            
+            <div class="companies-grid">
+                <!-- Company Card 1 -->
+                <div class="company-card" data-category="teknoloji">
+                    <div class="company-number">01</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <path d="M30 15L45 25V40L30 50L15 40V25L30 15Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>Trair Teknoloji Yatırımları A.Ş.</h3>
+                        <p class="location">İstanbul / Sarıyer</p>
+                    </div>
+                    <p class="company-description" data-en="Our technology company specialized in digital transformation and software solutions, offering services in a wide range.">
+                        Dijital dönüşüm ve yazılım çözümleri alanında uzmanlaşmış teknoloji şirketimiz, geniş bir yelpazede hizmet sunmaktadır.
+                    </p>
+                    <div class="company-services">
+                        <span class="service-tag">Teknoloji Ürünleri</span>
+                        <span class="service-tag">E-Ticaret (B2B, B2C, C2C)</span>
+                        <span class="service-tag">Kurumsal Web</span>
+                        <span class="service-tag">Mobil Uygulama</span>
+                    </div>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+
+                <!-- Company Card 2 -->
+                <div class="company-card" data-category="eticaret">
+                    <div class="company-number">02</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 18V30L38 34" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>Binlerce Marka</h3>
+                        <p class="tagline">Binlerce Marka, Tek Platform</p>
+                    </div>
+                    <p class="company-description" data-en="Our AI-powered next-generation marketplace platform offers an innovative e-commerce ecosystem that brings sellers and buyers together.">
+                        Yapay zeka destekli yeni nesil pazar yeri platformumuz, satıcılar ve alıcıları bir araya getiren inovatif bir e-ticaret ekosistemi sunmaktadır.
+                    </p>
+                    <div class="company-services">
+                        <span class="service-tag">AI Alışveriş</span>
+                        <span class="service-tag">Çok Satıcılı Pazar</span>
+                        <span class="service-tag">Akıllı Eşleştirme</span>
+                    </div>
+                    <p class="status" data-en="Platform under construction">Platform kurulum aşamasındadır</p>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+
+                <!-- Company Card 3 -->
+                <div class="company-card" data-category="lüks">
+                    <div class="company-number">03</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <path d="M20 25L30 20L40 25V40L30 45L20 40V25Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>Vip Loca</h3>
+                        <p class="tagline">Luxury Venues, Exclusive Moments</p>
+                    </div>
+                    <p class="company-description" data-en="Our premium platform offering luxury lifestyle and private event services creates unforgettable experiences.">
+                        Lüks yaşam tarzı ve özel etkinlik hizmetleri sunan premium platformumuz, unutulmaz deneyimler yaratmaktadır.
+                    </p>
+                    <div class="company-services">
+                        <span class="service-tag">Prestijli Restoranlar</span>
+                        <span class="service-tag">VIP Loca</span>
+                        <span class="service-tag">Private Etkinlik</span>
+                        <span class="service-tag">Kişisel Güvenlik</span>
+                        <span class="service-tag">Lüks Araç</span>
+                    </div>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+
+                <!-- Company Card 4 -->
+                <div class="company-card" data-category="teknoloji">
+                    <div class="company-number">04</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <path d="M30 15L42 22V38L30 45L18 38V22L30 15Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>TrairX Technology O.Ü</h3>
+                        <p class="location">Estonya | Kuruluş: 2023</p>
+                    </div>
+                    <p class="company-description" data-en="Our international technology company conducting R&D-focused work in artificial intelligence and mobile technologies.">
+                        Yapay zeka ve mobil teknolojiler alanında Ar-Ge odaklı çalışmalar yürüten uluslararası teknoloji şirketimizdir.
+                    </p>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <h4>Scoorpe</h4>
+                            <p data-en="AI Analysis Platform">Yapay Zeka Analiz Platformu</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>NutriScan</h4>
+                            <p data-en="Smart Nutrition Assistant">Akıllı Beslenme Asistanı</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Safely</h4>
+                            <p data-en="Security Solutions">Güvenlik Çözümleri</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Checkly</h4>
+                            <p data-en="Control & Verification">Kontrol ve Doğrulama</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>LingoChat</h4>
+                            <p data-en="Multilingual Platform">Çok Dilli İletişim</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Zeha</h4>
+                            <p data-en="Digital Solution Package">Dijital Çözüm Paketi</p>
+                        </div>
+                    </div>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+
+                <!-- Company Card 5 -->
+                <div class="company-card" data-category="marka">
+                    <div class="company-number">05</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <path d="M25 20H35M30 20V40M22 40H38" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>TrAir</h3>
+                        <p class="tagline">Premium Spor Giyim Markası</p>
+                    </div>
+                    <p class="company-description" data-en="Our sportswear brand stands out with quality and modern designs, offering a wide product range.">
+                        Kaliteli ve modern tasarımlarıyla öne çıkan spor giyim markamız, geniş bir ürün yelpazesi sunmaktadır.
+                    </p>
+                    <div class="company-services">
+                        <span class="service-tag">Kadın Koleksiyonu</span>
+                        <span class="service-tag">Erkek Koleksiyonu</span>
+                        <span class="service-tag">Çocuk Koleksiyonu</span>
+                    </div>
+                    <div class="values">
+                        <p data-en="Quality materials and production, modern and functional design, comfort and performance-focused products">
+                            Kaliteli malzeme ve üretim, modern ve fonksiyonel tasarım, konfor ve performans odaklı ürünler
+                        </p>
+                    </div>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+
+                <!-- Company Card 6 -->
+                <div class="company-card" data-category="teknoloji">
+                    <div class="company-number">06</div>
+                    <div class="company-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="12" fill="currentColor" opacity="0.1"/>
+                            <circle cx="30" cy="25" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 45L30 35L40 45" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="company-header">
+                        <h3>TrAir Agency</h3>
+                        <p class="tagline">Creative Solutions, Digital Excellence</p>
+                    </div>
+                    <p class="company-description" data-en="Our creative agency offering comprehensive advertising and digital marketing solutions for brands to establish a strong presence in the digital world.">
+                        Markaların dijital dünyada güçlü bir varlık oluşturması için kapsamlı reklam ve dijital pazarlama çözümleri sunan kreatif ajansımızdır.
+                    </p>
+                    <div class="company-services">
+                        <span class="service-tag">Reklam Kampanyaları</span>
+                        <span class="service-tag">Dijital Pazarlama</span>
+                        <span class="service-tag">Video Prodüksiyon</span>
+                        <span class="service-tag">Manken Kiralama</span>
+                        <span class="service-tag">Fotoğraf Çekimi</span>
+                        <span class="service-tag">Sosyal Medya</span>
+                        <span class="service-tag">Logo Tasarımı</span>
+                        <span class="service-tag">Marka Geliştirme</span>
+                        <span class="service-tag">Kreatif Konsept</span>
+                    </div>
+                    <a href="#" class="company-link" data-en="Learn More">Detaylı Bilgi →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <div>
+                    <h2 data-en="Our Journey">Tarihçemiz</h2>
+                    <p class="section-subtitle" data-en="Milestones">Kilometre Taşları</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Foundation">Kuruluş</h3>
+                        <p data-en="Baştürk Holding established. TrairX Technology O.Ü founded in Estonia.">Baştürk Holding kuruldu. TrairX Technology O.Ü Estonya'da faaliyete başladı.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Product Launch">Ürün Lansmanı</h3>
+                        <p data-en="First AI products launched: Scoorpe, NutriScan, Safely">İlk yapay zeka ürünleri piyasaya sürüldü: Scoorpe, NutriScan, Safely</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Expansion">Genişleme</h3>
+                        <p data-en="TrAir brand and TrAir Agency launched. Vip Loca platform development started.">TrAir markası ve TrAir Agency kuruldu. Vip Loca platformu geliştirilmeye başlandı.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Innovation">İnovasyon</h3>
+                        <p data-en="Binlerce Marka marketplace platform under development. New AI products: Checkly, LingoChat, Zeha">Binlerce Marka pazar yeri platformu geliştiriliyor. Yeni AI ürünleri: Checkly, LingoChat, Zeha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="haberler" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <div>
+                    <h2 data-en="News">Haberler</h2>
+                    <p class="section-subtitle" data-en="Latest Updates">Son Gelişmeler</p>
+                </div>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">15 Mart 2024</div>
+                    <h3 data-en="Binlerce Marka Platform Launch Soon">Binlerce Marka Platformu Yakında Yayında</h3>
+                    <p data-en="Our AI-powered marketplace platform is in final testing phase.">Yapay zeka destekli pazar yeri platformumuz son test aşamasında.</p>
+                    <a href="#" class="news-link" data-en="Read More">Devamını Oku →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">10 Mart 2024</div>
+                    <h3 data-en="TrairX Launches New AI Products">TrairX Yeni Yapay Zeka Ürünlerini Tanıttı</h3>
+                    <p data-en="LingoChat and Zeha added to our product portfolio.">LingoChat ve Zeha ürün portföyümüze eklendi.</p>
+                    <a href="#" class="news-link" data-en="Read More">Devamını Oku →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">5 Mart 2024</div>
+                    <h3 data-en="TrAir Agency Starts Operations">TrAir Agency Faaliyete Geçti</h3>
+                    <p data-en="Our creative agency offering comprehensive digital marketing solutions.">Kapsamlı dijital pazarlama çözümleri sunan kreatif ajansımız hizmete başladı.</p>
+                    <a href="#" class="news-link" data-en="Read More">Devamını Oku →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <div>
+                    <h2 data-en="Contact">İletişim</h2>
+                    <p class="section-subtitle" data-en="Get in Touch">Bize Ulaşın</p>
+                </div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Baştürk Holding</h3>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <p>İstanbul / Sarıyer, Türkiye</p>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <p class="contact-domain">basturkholding.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name" data-en="Your Name">Adınız Soyadınız</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email" data-en="Your Email">E-posta Adresiniz</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder=" ">
+                            <label for="phone" data-en="Phone Number">Telefon Numaranız</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message" data-en="Your Message">Mesajınız</label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-en="Send Message">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 data-en="Stay Updated">Haberdar Olun</h2>
+                <p data-en="Subscribe to our newsletter for latest news and updates">En son haberler ve gelişmeler için bültenimize abone olun</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" data-en-placeholder="Your email address" required>
+                    <button type="submit" data-en="Subscribe">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">BAŞTÜRK</span>
+                        <span class="logo-subtitle">HOLDING</span>
+                    </div>
+                    <p class="footer-description" data-en="Building the future with innovative solutions in technology, e-commerce and luxury services.">
+                        Teknoloji, e-ticaret ve lüks hizmetler alanında yenilikçi çözümlerle geleceği inşa ediyoruz.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#hakkimizda" data-en="About">Hakkımızda</a></li>
+                        <li><a href="#sirketlerimiz" data-en="Companies">Şirketlerimiz</a></li>
+                        <li><a href="#timeline" data-en="Timeline">Tarihçe</a></li>
+                        <li><a href="#haberler" data-en="News">Haberler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Companies">Şirketlerimiz</h4>
+                    <ul>
+                        <li><a href="#">Trair Teknoloji</a></li>
+                        <li><a href="#">Binlerce Marka</a></li>
+                        <li><a href="#">Vip Loca</a></li>
+                        <li><a href="#">TrairX Technology</a></li>
+                        <li><a href="#">TrAir</a></li>
+                        <li><a href="#">TrAir Agency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Legal">Yasal</h4>
+                    <ul>
+                        <li><a href="#" data-en="Privacy Policy">Gizlilik Politikası</a></li>
+                        <li><a href="#" data-en="Terms of Use">Kullanım Koşulları</a></li>
+                        <li><a href="#" data-en="Cookie Policy">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Baştürk Holding. <span data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+                <p class="footer-credit" data-en="Designed with passion">Tutkuyla tasarlandı</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p data-en="We use cookies to improve your experience on our website. By continuing to browse, you agree to our use of cookies.">
+                Web sitemizde deneyiminizi geliştirmek için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek çerez kullanımını kabul etmiş olursunuz.
+            </p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" data-en="Accept">Kabul Et</button>
+                <button class="cookie-btn decline" data-en="Decline">Reddet</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
