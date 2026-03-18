@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>misafirol.org - Sosyal Sorumluluk Projesi | Baştürk Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .project-page {
+            padding: 150px 0 100px;
+            background-color: var(--bg-white);
+        }
+        .project-hero {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .project-badge {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--primary-black);
+            color: var(--bg-white);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .project-hero h1 {
+            font-size: 64px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        .project-hero .tagline {
+            font-size: 24px;
+            color: var(--light-gray);
+            margin-bottom: 30px;
+        }
+        .project-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        .stat-box {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary-black);
+            margin-bottom: 10px;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            border: 1px solid var(--border-gray);
+        }
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 60px;
+        }
+        .project-section h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+        .project-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            padding: 30px;
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--primary-black);
+        }
+        .feature-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-gray);
+        }
+        .team-section {
+            background-color: var(--bg-light);
+            padding: 60px;
+            margin: 60px 0;
+        }
+        .team-section h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .team-section p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
+            color: var(--bg-white);
+            margin-top: 80px;
+        }
+        .cta-section h2 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--bg-white);
+        }
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .cta-button-white {
+            display: inline-block;
+            padding: 18px 50px;
+            background-color: var(--bg-white);
+            color: var(--primary-black);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+        .cta-button-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 42px;
+            }
+            .project-stats {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Baştürk Holding" class="logo-image">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#hakkimizda">Hakkımızda</a>
+                <a href="index.html#sirketlerimiz">Şirketlerimiz</a>
+                <a href="index.html#timeline">Tarihçe</a>
+                <a href="basinda-biz.html">Basında Biz</a>
+                <a href="kariyer.html">Kariyer</a>
+                <a href="index.html#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-page">
+        <div class="project-hero">
+            <div class="container">
+                <div class="project-badge">Sosyal Sorumluluk Projesi</div>
+                <h1>misafirol.org</h1>
+                <p class="tagline">Afet Döneminde Dayanışma ve Yardımlaşma Platformu</p>
+                <div class="project-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">18</div>
+                        <div class="stat-label">Saat İçinde Geliştirildi</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">12.000+</div>
+                        <div class="stat-label">Depremzede Konaklatıldı</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2023</div>
+                        <div class="stat-label">6 Şubat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="project-image">
+                <img src="misafirol.jpeg" alt="misafirol.org Platform">
+            </div>
+
+            <div class="project-content">
+                <div class="project-section">
+                    <h2>Proje Hakkında</h2>
+                    <p>
+                        misafirol.org, özellikle 6 Şubat 2023 Kahramanmaraş depremleri sonrasında ortaya çıkan, gönüllülük esasına dayalı bir sosyal yardımlaşma platformudur. Projenin temel amacı, barınma ihtiyacı olan afetzedeler ile evini veya boş kontenjanını paylaşmak isteyen gönüllüleri bir araya getirmektir.
+                    </p>
+                    <p>
+                        Platform, deprem felaketi sonrası sadece 18 saat gibi kısa bir sürede hayata geçirilmiş ve 12.000'den fazla depremzedenin güvenli konaklama bulmasını sağlayarak afet döneminde yapılan en iyi çözüm projelerinden biri olarak kabul edilmiştir.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🏠 Barınma Desteği</h3>
+                        <p>Ev sahipleri, ağırlayabilecekleri kişi sayısını ve tarih aralığını belirterek ilan verebilirler. Afetzedeler, ihtiyaçlarına uygun konaklama seçeneklerini kolayca bulabilirler.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🚗 Ulaşım Yardımı</h3>
+                        <p>Barınma imkanının yanı sıra, afetzedeler için ulaşım desteği sağlayabilecek gönüllüler de platform üzerinden iletişime geçebilir.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🐾 Hayvan Sahiplendirme</h3>
+                        <p>Platform bünyesinde, depremden etkilenen sahipsiz hayvanlar için de bir pet sahiplendirme bölümü (misafirol.org/petadoptions) oluşturulmuştur.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🤝 Gönüllülük Esası</h3>
+                        <p>Tüm hizmetler gönüllülük esasına dayanır ve platform üzerinden herhangi bir ücret talep edilmez. Dayanışma ve yardımlaşma ruhu ön plandadır.</p>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>Proje Ekibi ve İş Birliği</h3>
+                    <p>
+                        <strong>Baştürk Holding Yönetim Kurulu Başkanı Tanju Baştürk</strong>'ün proje yöneticiliğini üstlendiği platform; <strong>Trair Teknoloji</strong> ve <strong>Altıkod</strong> gibi ekiplerin desteğiyle imece usulü geliştirilmiştir.
+                    </p>
+                    <p>
+                        Proje, teknoloji şirketlerinin sosyal sorumluluk bilinciyle hareket ederek, kriz anlarında topluma nasıl hızlı ve etkili çözümler sunabileceğinin önemli bir örneğidir.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Sosyal Etki</h2>
+                    <p>
+                        misafirol.org, sadece bir teknoloji platformu değil, aynı zamanda toplumsal dayanışmanın ve yardımlaşmanın dijital bir yansımasıdır. Platform sayesinde:
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0;">
+                        <li style="padding: 10px 0 10px 30px; position: relative; font-size: 17px;">
+                            <span style="position: absolute; left: 0; color: var(--primary-black); font-weight: bold;">✓</span>
+                            Binlerce aile güvenli bir barınma imkanına kavuştu
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; font-size: 17px;">
+                            <span style="position: absolute; left: 0; color: var(--primary-black); font-weight: bold;">✓</span>
+                            Gönüllüler ve afetzedeler hızlıca bir araya geldi
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; font-size: 17px;">
+                            <span style="position: absolute; left: 0; color: var(--primary-black); font-weight: bold;">✓</span>
+                            Sahipsiz hayvanlar için yeni aileler bulundu
+                        </li>
+                        <li style="padding: 10px 0 10px 30px; position: relative; font-size: 17px;">
+                            <span style="position: absolute; left: 0; color: var(--primary-black); font-weight: bold;">✓</span>
+                            Toplumsal dayanışma güçlendirildi
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Medyada misafirol.org</h2>
+                    <p>
+                        Proje, ulusal ve yerel medyada geniş yer bulmuş, afet yönetiminde teknolojinin gücünü gösteren başarılı bir örnek olarak gösterilmiştir. Birçok haber kanalı ve gazete, platformun hızlı geliştirilmesi ve etkili sonuçlarını övgüyle karşılamıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="container">
+                <h2>Bir STK Olarak Elimizden Geleni Yaptık</h2>
+                <p>Afet anlarında topluma hizmet etmek, en büyük sorumluluğumuzdur.</p>
+                <a href="https://www.misafirol.org" target="_blank" class="cta-button-white">misafirol.org'u Ziyaret Et</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Baştürk Holding. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
