@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşekkürler | Baştürk Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 40px 20px;
+        }
+        .thank-you-container {
+            max-width: 600px;
+            background: var(--bg-white);
+            padding: 60px 50px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: #10b981;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.5s ease-out;
+        }
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+        }
+        .thank-you-container h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--primary-black);
+        }
+        .thank-you-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+        .thank-you-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .thank-you-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--primary-black);
+            color: var(--bg-white);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--primary-black);
+        }
+        .thank-you-btn:hover {
+            background-color: transparent;
+            color: var(--primary-black);
+        }
+        .thank-you-btn.secondary {
+            background-color: transparent;
+            color: var(--primary-black);
+        }
+        .thank-you-btn.secondary:hover {
+            background-color: var(--primary-black);
+            color: var(--bg-white);
+        }
+        .countdown {
+            margin-top: 30px;
+            font-size: 14px;
+            color: var(--light-gray);
+        }
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .thank-you-container {
+                padding: 40px 30px;
+            }
+            .thank-you-container h1 {
+                font-size: 28px;
+            }
+            .thank-you-buttons {
+                flex-direction: column;
+            }
+            .thank-you-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-container">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h1>Teşekkür Ederiz!</h1>
+            <p>
+                Mesajınız başarıyla iletildi. En kısa sürede size geri dönüş yapacağız.
+                <br><br>
+                İlginiz için teşekkür ederiz.
+            </p>
+            <div class="thank-you-buttons">
+                <a href="index.html" class="thank-you-btn">Ana Sayfaya Dön</a>
+                <a href="index.html#sirketlerimiz" class="thank-you-btn secondary">Şirketlerimiz</a>
+            </div>
+            <div class="countdown">
+                <span id="countdown">5</span> saniye içinde ana sayfaya yönlendirileceksiniz...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown and redirect
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const interval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(interval);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+
+        // Stop countdown if user clicks a button
+        document.querySelectorAll('.thank-you-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                clearInterval(interval);
+            });
+        });
+    </script>
+</body>
+</html>

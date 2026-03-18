@@ -29,96 +29,6 @@
             max-width: 700px;
             margin: 0 auto;
         }
-        .job-listings {
-            display: grid;
-            gap: 30px;
-            margin-bottom: 80px;
-        }
-        .job-card {
-            background-color: var(--bg-white);
-            border: 1px solid var(--border-gray);
-            padding: 40px;
-            transition: var(--transition);
-        }
-        .job-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 20px;
-        }
-        .job-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .job-company {
-            font-size: 16px;
-            color: var(--light-gray);
-            margin-bottom: 5px;
-        }
-        .job-location {
-            font-size: 14px;
-            color: var(--light-gray);
-        }
-        .job-type {
-            padding: 8px 20px;
-            background-color: var(--primary-black);
-            color: var(--bg-white);
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        .job-description {
-            font-size: 16px;
-            line-height: 1.8;
-            color: var(--text-gray);
-            margin-bottom: 20px;
-        }
-        .job-requirements {
-            margin: 20px 0;
-        }
-        .job-requirements h4 {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .job-requirements ul {
-            list-style: none;
-            padding: 0;
-        }
-        .job-requirements li {
-            padding: 8px 0 8px 25px;
-            position: relative;
-            font-size: 15px;
-            color: var(--text-gray);
-        }
-        .job-requirements li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--primary-black);
-            font-weight: bold;
-        }
-        .apply-btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background-color: var(--primary-black);
-            color: var(--bg-white);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            transition: var(--transition);
-            border: 2px solid var(--primary-black);
-        }
-        .apply-btn:hover {
-            background-color: transparent;
-            color: var(--primary-black);
-        }
         .application-form {
             max-width: 800px;
             margin: 0 auto;
@@ -131,6 +41,49 @@
             font-weight: 800;
             margin-bottom: 30px;
             text-align: center;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 0;
+        }
+        .file-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+            position: static;
+            transform: none;
+            background: transparent;
+            padding: 0;
+        }
+        .file-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--border-gray);
+            background-color: var(--bg-white);
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .file-input:hover {
+            border-color: var(--primary-black);
+        }
+        .form-group.file-group {
+            margin-bottom: 30px;
+        }
+        .form-group.file-group label {
+            position: static;
+            transform: none;
+            background: transparent;
+            padding: 0;
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -158,132 +111,61 @@
                 <p>Baştürk Holding ailesi olarak, yetenekli ve tutkulu profesyonelleri aramaktayız. Geleceği birlikte inşa edelim.</p>
             </div>
 
-            <div class="job-listings">
-                <div class="job-card">
-                    <div class="job-header">
-                        <div>
-                            <h3 class="job-title">Yazılım Geliştirici (Full Stack)</h3>
-                            <p class="job-company">Trair Teknoloji Yatırımları A.Ş.</p>
-                            <p class="job-location">📍 İstanbul / Sarıyer</p>
-                        </div>
-                        <span class="job-type">Tam Zamanlı</span>
-                    </div>
-                    <p class="job-description">
-                        E-ticaret ve yapay zeka projelerimizde görev alacak, modern web teknolojilerine hakim, deneyimli yazılım geliştiriciler arıyoruz.
-                    </p>
-                    <div class="job-requirements">
-                        <h4>Aranan Nitelikler:</h4>
-                        <ul>
-                            <li>React, Node.js, TypeScript deneyimi</li>
-                            <li>RESTful API ve mikroservis mimarisi bilgisi</li>
-                            <li>En az 3 yıl profesyonel deneyim</li>
-                            <li>Takım çalışmasına yatkınlık</li>
-                        </ul>
-                    </div>
-                    <a href="#basvuru" class="apply-btn">Başvur</a>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <div>
-                            <h3 class="job-title">Dijital Pazarlama Uzmanı</h3>
-                            <p class="job-company">TrAir Agency</p>
-                            <p class="job-location">📍 İstanbul / Sarıyer</p>
-                        </div>
-                        <span class="job-type">Tam Zamanlı</span>
-                    </div>
-                    <p class="job-description">
-                        Müşterilerimizin dijital varlığını güçlendirmek için stratejik kampanyalar yönetecek, yaratıcı ve analitik düşünebilen dijital pazarlama uzmanı arıyoruz.
-                    </p>
-                    <div class="job-requirements">
-                        <h4>Aranan Nitelikler:</h4>
-                        <ul>
-                            <li>Google Ads, Facebook Ads deneyimi</li>
-                            <li>SEO ve SEM bilgisi</li>
-                            <li>Sosyal medya yönetimi tecrübesi</li>
-                            <li>Analitik düşünme yeteneği</li>
-                        </ul>
-                    </div>
-                    <a href="#basvuru" class="apply-btn">Başvur</a>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <div>
-                            <h3 class="job-title">Üretim Müdürü</h3>
-                            <p class="job-company">Haspen Pencere ve Kapı Sistemleri</p>
-                            <p class="job-location">📍 Zonguldak / Kilimli</p>
-                        </div>
-                        <span class="job-type">Tam Zamanlı</span>
-                    </div>
-                    <p class="job-description">
-                        PVC ve alüminyum üretim süreçlerini yönetecek, kalite standartlarını sağlayacak deneyimli üretim müdürü arıyoruz.
-                    </p>
-                    <div class="job-requirements">
-                        <h4>Aranan Nitelikler:</h4>
-                        <ul>
-                            <li>Üretim yönetimi deneyimi (min. 5 yıl)</li>
-                            <li>PVC/Alüminyum sektör bilgisi</li>
-                            <li>Kalite kontrol ve süreç yönetimi</li>
-                            <li>Liderlik ve ekip yönetimi</li>
-                        </ul>
-                    </div>
-                    <a href="#basvuru" class="apply-btn">Başvur</a>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <div>
-                            <h3 class="job-title">Yapay Zeka Mühendisi</h3>
-                            <p class="job-company">TrairX Technology O.Ü</p>
-                            <p class="job-location">📍 Estonya (Remote)</p>
-                        </div>
-                        <span class="job-type">Tam Zamanlı</span>
-                    </div>
-                    <p class="job-description">
-                        AI ürünlerimizin geliştirilmesinde görev alacak, makine öğrenmesi ve derin öğrenme konularında uzman mühendis arıyoruz.
-                    </p>
-                    <div class="job-requirements">
-                        <h4>Aranan Nitelikler:</h4>
-                        <ul>
-                            <li>Python, TensorFlow, PyTorch deneyimi</li>
-                            <li>Machine Learning ve Deep Learning bilgisi</li>
-                            <li>NLP veya Computer Vision tecrübesi</li>
-                            <li>Yüksek lisans veya doktora (tercih)</li>
-                        </ul>
-                    </div>
-                    <a href="#basvuru" class="apply-btn">Başvur</a>
-                </div>
-            </div>
-
             <div id="basvuru" class="application-form">
                 <h2>Başvuru Formu</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" required placeholder=" ">
-                        <label for="name">Ad Soyad</label>
+                <form class="contact-form" action="https://formsubmit.co/info@trair.com.tr" method="POST" enctype="multipart/form-data">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Yeni Kariyer Başvurusu - Baştürk Holding">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://basturkholding.com/tesekkurler.html">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="ad" name="ad" required placeholder=" ">
+                            <label for="ad">Ad</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="soyad" name="soyad" required placeholder=" ">
+                            <label for="soyad">Soyad</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required placeholder=" ">
-                        <label for="email">E-posta</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="meslek" name="meslek" required placeholder=" ">
+                            <label for="meslek">Meslek</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="yas" name="yas" required placeholder=" " min="18" max="65">
+                            <label for="yas">Yaş</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" required placeholder=" ">
-                        <label for="phone">Telefon</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="il" name="il" required placeholder=" ">
+                            <label for="il">İl</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="ilce" name="ilce" required placeholder=" ">
+                            <label for="ilce">İlçe</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="position" required placeholder=" ">
-                        <label for="position">Başvurulan Pozisyon</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="telefon" name="telefon" required placeholder=" ">
+                            <label for="telefon">İletişim Numarası</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">E-posta</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" required placeholder=" "></textarea>
-                        <label for="message">Kendinizden Bahsedin</label>
+                    <div class="form-group file-group">
+                        <label class="file-label" for="cv">CV Dosyası Ekle (PDF, DOC, DOCX)</label>
+                        <input type="file" id="cv" name="attachment" accept=".pdf,.doc,.docx" class="file-input">
                     </div>
-                    <div class="form-group">
-                        <label style="position: static; font-size: 14px; margin-bottom: 10px; display: block;">CV Yükle (PDF)</label>
-                        <input type="file" accept=".pdf" style="padding: 15px; border: 2px solid var(--border-gray);">
-                    </div>
-                    <button type="submit" class="submit-btn">Başvuruyu Gönder</button>
+                    <button type="submit" class="submit-btn">Gönder</button>
                 </form>
             </div>
         </div>

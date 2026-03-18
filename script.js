@@ -104,7 +104,7 @@ document.querySelectorAll('.main-nav a').forEach(link => {
     });
 });
 
-// Smooth scroll
+// Smooth scroll with easing
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -114,10 +114,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+            // Smooth scroll with custom easing
+            const startPosition = window.pageYOffset;
+            const distance = offsetPosition - startPosition;
+            const duration = 1000;
+            let start = null;
+
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function easeInOutCubic(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t * t + b;
+                t -= 2;
+                return c / 2 * (t * t * t + 2) + b;
+            }
+
+            requestAnimationFrame(animation);
         }
     });
 });
@@ -154,7 +172,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements
 document.addEventListener('DOMContentLoaded', () => {
-    // Company cards
+    // Company cards with stagger effect
     const companyCards = document.querySelectorAll('.company-card');
     companyCards.forEach((card, index) => {
         card.classList.add('fade-in');
@@ -165,15 +183,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Stats
     const stats = document.querySelectorAll('.stat-item');
     stats.forEach((stat, index) => {
-        stat.classList.add('fade-in');
+        stat.classList.add('scale-up');
         stat.style.transitionDelay = `${index * 0.15}s`;
         observer.observe(stat);
     });
 
-    // Timeline items
+    // Timeline items with alternating animations
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.2}s`;
+        if (index % 2 === 0) {
+            item.classList.add('slide-in-left');
+        } else {
+            item.classList.add('slide-in-right');
+        }
+        item.style.transitionDelay = `${index * 0.15}s`;
         observer.observe(item);
     });
 
@@ -181,8 +204,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsCards = document.querySelectorAll('.news-card');
     newsCards.forEach((card, index) => {
         card.classList.add('fade-in');
-        card.style.transitionDelay = `${index * 0.15}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
+    });
+
+    // Section headers
+    const sectionHeaders = document.querySelectorAll('.section-header');
+    sectionHeaders.forEach(header => {
+        header.classList.add('slide-in-left');
+        observer.observe(header);
+    });
+
+    // About text
+    const aboutText = document.querySelector('.about-text');
+    if (aboutText) {
+        aboutText.classList.add('fade-in');
+        observer.observe(aboutText);
+    }
+
+    // Contact form
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.classList.add('fade-in');
+        observer.observe(contactForm);
+    }
+
+    // Add parallax effect to images
+    const parallaxImages = document.querySelectorAll('.company-icon, .news-image');
+    parallaxImages.forEach(img => {
+        img.addEventListener('mousemove', (e) => {
+            const rect = img.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const deltaX = (x - centerX) / centerX;
+            const deltaY = (y - centerY) / centerY;
+            
+            img.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg) scale(1.05)`;
+        });
+        
+        img.addEventListener('mouseleave', () => {
+            img.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) scale(1)';
+        });
     });
 });
 
@@ -247,22 +311,8 @@ filterButtons.forEach(btn => {
     });
 });
 
-// Contact Form
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Simulate form submission
-    alert(currentLang === 'tr' ? 'Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.' : 'Your message has been sent! We will get back to you soon.');
-    contactForm.reset();
-});
+// Form submission is handled by FormSubmit.co
+// No additional JavaScript needed for form functionality
 
 // Newsletter Form
 const newsletterForm = document.querySelector('.newsletter-form');
