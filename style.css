@@ -226,9 +226,23 @@ header .container {
 
 .logo {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    align-items: center;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.logo-image:hover {
+    opacity: 0.8;
+}
+
+header.scrolled .logo-image {
+    height: 40px;
 }
 
 .logo-text {
