@@ -128,9 +128,9 @@ body {
 /* Language Toggle */
 .language-toggle {
     position: fixed;
-    top: 100px;
+    top: 30px;
     right: 30px;
-    z-index: 999;
+    z-index: 1001;
     display: flex;
     gap: 5px;
     background-color: var(--bg-white);
@@ -159,9 +159,9 @@ body {
 /* Theme Toggle */
 .theme-toggle {
     position: fixed;
-    top: 150px;
+    top: 90px;
     right: 30px;
-    z-index: 999;
+    z-index: 1001;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -274,19 +274,8 @@ header.scrolled .logo-image {
     transition: var(--transition);
 }
 
-.main-nav a:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-black);
-    transition: width 0.3s ease;
-}
-
-.main-nav a:hover:after {
-    width: 100%;
+.main-nav a:hover {
+    opacity: 0.6;
 }
 
 .mobile-menu-toggle {
