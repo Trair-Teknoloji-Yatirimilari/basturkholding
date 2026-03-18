@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basında Biz | Baştürk Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .press-page {
+            padding: 150px 0 100px;
+            background-color: var(--bg-white);
+        }
+        .press-hero {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .press-hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .press-hero p {
+            font-size: 20px;
+            color: var(--light-gray);
+        }
+        .press-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        .press-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-gray);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .press-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        .press-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #ccc;
+        }
+        .press-content {
+            padding: 30px;
+        }
+        .press-source {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--primary-black);
+            margin-bottom: 10px;
+        }
+        .press-date {
+            font-size: 13px;
+            color: var(--light-gray);
+            margin-bottom: 15px;
+        }
+        .press-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .press-excerpt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+        .press-link {
+            display: inline-block;
+            color: var(--primary-black);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .press-link:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Baştürk Holding" class="logo-image">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#hakkimizda">Hakkımızda</a>
+                <a href="index.html#sirketlerimiz">Şirketlerimiz</a>
+                <a href="index.html#timeline">Tarihçe</a>
+                <a href="basinda-biz.html" class="active">Basında Biz</a>
+                <a href="kariyer.html">Kariyer</a>
+                <a href="index.html#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="press-page">
+        <div class="container">
+            <div class="press-hero">
+                <h1>Basında Biz</h1>
+                <p>Medyada yer alan haberlerimiz ve röportajlarımız</p>
+            </div>
+
+            <div class="press-grid">
+                <article class="press-card">
+                    <div class="press-image">📰</div>
+                    <div class="press-content">
+                        <div class="press-source">Ekonomi Haber</div>
+                        <div class="press-date">6 Şubat 2023</div>
+                        <h3 class="press-title">misafirol.org: Depremzedelere 18 Saatte Çözüm</h3>
+                        <p class="press-excerpt">
+                            Baştürk Holding'in geliştirdiği misafirol.org platformu, deprem felaketi sonrası 18 saatte hayata geçirildi ve 12.000 depremzedenin güvenli konaklama bulmasını sağladı.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">📱</div>
+                    <div class="press-content">
+                        <div class="press-source">Teknoloji Dünyası</div>
+                        <div class="press-date">15 Mart 2024</div>
+                        <h3 class="press-title">TrairX Technology'den Yeni Yapay Zeka Ürünleri</h3>
+                        <p class="press-excerpt">
+                            Estonya merkezli TrairX Technology, LingoChat ve Zeha ürünlerini piyasaya sürdü. Yapay zeka destekli çözümler büyük ilgi görüyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">🏢</div>
+                    <div class="press-content">
+                        <div class="press-source">İş Dünyası</div>
+                        <div class="press-date">1 Mart 2024</div>
+                        <h3 class="press-title">Vip Loca: Lüks Yaşam Platformu Hizmete Başladı</h3>
+                        <p class="press-excerpt">
+                            Baştürk Holding'in yeni girişimi Vip Loca, lüks restoran rezervasyonları ve VIP araç kiralama hizmetleriyle dikkat çekiyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">🛍️</div>
+                    <div class="press-content">
+                        <div class="press-source">E-Ticaret Magazin</div>
+                        <div class="press-date">20 Şubat 2024</div>
+                        <h3 class="press-title">Binlerce Marka: AI Destekli Pazar Yeri Geliyor</h3>
+                        <p class="press-excerpt">
+                            Yapay zeka teknolojisiyle donatılan Binlerce Marka platformu, e-ticaret sektöründe yeni bir dönem başlatmaya hazırlanıyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">🏗️</div>
+                    <div class="press-content">
+                        <div class="press-source">İnşaat ve Yapı</div>
+                        <div class="press-date">10 Ocak 2024</div>
+                        <h3 class="press-title">Haspen: 30 Yıllık Kalite Geleneği</h3>
+                        <p class="press-excerpt">
+                            1994'ten bu yana PVC ve alüminyum sistemler üreten Haspen, sektörde kalite ve güvenin adresi olmaya devam ediyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">👕</div>
+                    <div class="press-content">
+                        <div class="press-source">Moda & Tekstil</div>
+                        <div class="press-date">5 Aralık 2023</div>
+                        <h3 class="press-title">TrAir: Spor Giyimde Yeni Soluk</h3>
+                        <p class="press-excerpt">
+                            Modern tasarımları ve kaliteli üretimiyle TrAir markası, spor giyim sektöründe hızla büyüyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">📢</div>
+                    <div class="press-content">
+                        <div class="press-source">Reklam Dünyası</div>
+                        <div class="press-date">15 Kasım 2023</div>
+                        <h3 class="press-title">TrAir Agency: Dijital Pazarlamada Fark Yaratan Ajans</h3>
+                        <p class="press-excerpt">
+                            Kreatif çözümleri ve başarılı kampanyalarıyla TrAir Agency, markaların dijital dönüşümüne öncülük ediyor.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+
+                <article class="press-card">
+                    <div class="press-image">🚀</div>
+                    <div class="press-content">
+                        <div class="press-source">Girişim Haber</div>
+                        <div class="press-date">1 Ekim 2023</div>
+                        <h3 class="press-title">Baştürk Holding: Çok Sektörlü Büyüme Stratejisi</h3>
+                        <p class="press-excerpt">
+                            Teknolojiden üretime, e-ticaretten lüks hizmetlere kadar geniş bir yelpazede faaliyet gösteren holding, büyüme hedeflerini açıkladı.
+                        </p>
+                        <a href="#" class="press-link">Haberi Oku →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Baştürk Holding. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kariyer | Baştürk Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .career-page {
+            padding: 150px 0 100px;
+            background-color: var(--bg-white);
+        }
+        .career-hero {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .career-hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .career-hero p {
+            font-size: 20px;
+            color: var(--light-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .job-listings {
+            display: grid;
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        .job-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-gray);
+            padding: 40px;
+            transition: var(--transition);
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .job-company {
+            font-size: 16px;
+            color: var(--light-gray);
+            margin-bottom: 5px;
+        }
+        .job-location {
+            font-size: 14px;
+            color: var(--light-gray);
+        }
+        .job-type {
+            padding: 8px 20px;
+            background-color: var(--primary-black);
+            color: var(--bg-white);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .job-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+        .job-requirements {
+            margin: 20px 0;
+        }
+        .job-requirements h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .job-requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+        .job-requirements li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            font-size: 15px;
+            color: var(--text-gray);
+        }
+        .job-requirements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-black);
+            font-weight: bold;
+        }
+        .apply-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--primary-black);
+            color: var(--bg-white);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--primary-black);
+        }
+        .apply-btn:hover {
+            background-color: transparent;
+            color: var(--primary-black);
+        }
+        .application-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-gray);
+            padding: 50px;
+        }
+        .application-form h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Baştürk Holding" class="logo-image">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#hakkimizda">Hakkımızda</a>
+                <a href="index.html#sirketlerimiz">Şirketlerimiz</a>
+                <a href="index.html#timeline">Tarihçe</a>
+                <a href="basinda-biz.html">Basında Biz</a>
+                <a href="kariyer.html" class="active">Kariyer</a>
+                <a href="index.html#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="career-page">
+        <div class="container">
+            <div class="career-hero">
+                <h1>Kariyer Fırsatları</h1>
+                <p>Baştürk Holding ailesi olarak, yetenekli ve tutkulu profesyonelleri aramaktayız. Geleceği birlikte inşa edelim.</p>
+            </div>
+
+            <div class="job-listings">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Yazılım Geliştirici (Full Stack)</h3>
+                            <p class="job-company">Trair Teknoloji Yatırımları A.Ş.</p>
+                            <p class="job-location">📍 İstanbul / Sarıyer</p>
+                        </div>
+                        <span class="job-type">Tam Zamanlı</span>
+                    </div>
+                    <p class="job-description">
+                        E-ticaret ve yapay zeka projelerimizde görev alacak, modern web teknolojilerine hakim, deneyimli yazılım geliştiriciler arıyoruz.
+                    </p>
+                    <div class="job-requirements">
+                        <h4>Aranan Nitelikler:</h4>
+                        <ul>
+                            <li>React, Node.js, TypeScript deneyimi</li>
+                            <li>RESTful API ve mikroservis mimarisi bilgisi</li>
+                            <li>En az 3 yıl profesyonel deneyim</li>
+                            <li>Takım çalışmasına yatkınlık</li>
+                        </ul>
+                    </div>
+                    <a href="#basvuru" class="apply-btn">Başvur</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Dijital Pazarlama Uzmanı</h3>
+                            <p class="job-company">TrAir Agency</p>
+                            <p class="job-location">📍 İstanbul / Sarıyer</p>
+                        </div>
+                        <span class="job-type">Tam Zamanlı</span>
+                    </div>
+                    <p class="job-description">
+                        Müşterilerimizin dijital varlığını güçlendirmek için stratejik kampanyalar yönetecek, yaratıcı ve analitik düşünebilen dijital pazarlama uzmanı arıyoruz.
+                    </p>
+                    <div class="job-requirements">
+                        <h4>Aranan Nitelikler:</h4>
+                        <ul>
+                            <li>Google Ads, Facebook Ads deneyimi</li>
+                            <li>SEO ve SEM bilgisi</li>
+                            <li>Sosyal medya yönetimi tecrübesi</li>
+                            <li>Analitik düşünme yeteneği</li>
+                        </ul>
+                    </div>
+                    <a href="#basvuru" class="apply-btn">Başvur</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Üretim Müdürü</h3>
+                            <p class="job-company">Haspen Pencere ve Kapı Sistemleri</p>
+                            <p class="job-location">📍 Zonguldak / Kilimli</p>
+                        </div>
+                        <span class="job-type">Tam Zamanlı</span>
+                    </div>
+                    <p class="job-description">
+                        PVC ve alüminyum üretim süreçlerini yönetecek, kalite standartlarını sağlayacak deneyimli üretim müdürü arıyoruz.
+                    </p>
+                    <div class="job-requirements">
+                        <h4>Aranan Nitelikler:</h4>
+                        <ul>
+                            <li>Üretim yönetimi deneyimi (min. 5 yıl)</li>
+                            <li>PVC/Alüminyum sektör bilgisi</li>
+                            <li>Kalite kontrol ve süreç yönetimi</li>
+                            <li>Liderlik ve ekip yönetimi</li>
+                        </ul>
+                    </div>
+                    <a href="#basvuru" class="apply-btn">Başvur</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Yapay Zeka Mühendisi</h3>
+                            <p class="job-company">TrairX Technology O.Ü</p>
+                            <p class="job-location">📍 Estonya (Remote)</p>
+                        </div>
+                        <span class="job-type">Tam Zamanlı</span>
+                    </div>
+                    <p class="job-description">
+                        AI ürünlerimizin geliştirilmesinde görev alacak, makine öğrenmesi ve derin öğrenme konularında uzman mühendis arıyoruz.
+                    </p>
+                    <div class="job-requirements">
+                        <h4>Aranan Nitelikler:</h4>
+                        <ul>
+                            <li>Python, TensorFlow, PyTorch deneyimi</li>
+                            <li>Machine Learning ve Deep Learning bilgisi</li>
+                            <li>NLP veya Computer Vision tecrübesi</li>
+                            <li>Yüksek lisans veya doktora (tercih)</li>
+                        </ul>
+                    </div>
+                    <a href="#basvuru" class="apply-btn">Başvur</a>
+                </div>
+            </div>
+
+            <div id="basvuru" class="application-form">
+                <h2>Başvuru Formu</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Ad Soyad</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">E-posta</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" required placeholder=" ">
+                        <label for="phone">Telefon</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="position" required placeholder=" ">
+                        <label for="position">Başvurulan Pozisyon</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Kendinizden Bahsedin</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="position: static; font-size: 14px; margin-bottom: 10px; display: block;">CV Yükle (PDF)</label>
+                        <input type="file" accept=".pdf" style="padding: 15px; border: 2px solid var(--border-gray);">
+                    </div>
+                    <button type="submit" class="submit-btn">Başvuruyu Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Baştürk Holding. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
